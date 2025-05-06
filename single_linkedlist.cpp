@@ -169,9 +169,11 @@ int main()
        
         break;
         default:
+        case '5':
         {
-            cout << "pilihan salah !." << endl;
+            exit(0);
         }
+       
             {
                 break;
             }
