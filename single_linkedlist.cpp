@@ -52,20 +52,18 @@ void addNode()
         return (START == NULL);
     }
     bool search(int nim, node **previous, node **current)
-    
-    bool delNode(int nim)
     {
-        node *current, *previous;
-        if (search(nim, &previous, &current))
-            return false;
-
-        if (current == START)
-            START == START->next;
-        else
-            previous->next = current->next;
-        delete current;
-        return;
+        *previous == START;
+        *current = START;
+        while ((*current != NULL) && (nim != (*current)->noMhs))
+        {
+            *previous = *current;
+            *current = (*current)->next;
+        }
+        return (*current != NULL);
     }
+    bool delNode(int nim)
+    
     void traverse()
     {
         if (listEmpty())
