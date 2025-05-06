@@ -116,26 +116,12 @@ int main()
         switch (ch)
         {
         case '1':
-        
+        {
+            mhs.addNode();
+        }
         break;
         case '2':
-        {
-            if (mhs.listEmpty())
-            {
-                cout << endl
-                     << "List Kosong" << endl;
-                break;
-            }
-            cout << endl
-                 << "\nMasukkan no mahasiswa yang akan di hapus :";
-            cin >> nim;
-            if (mhs.delNode(nim) == false)
-                cout << endl
-                     << "data tidak di temukan " << endl;
-            else
-                cout << endl
-                     << " data dengan nomor mahasiswa " << nim << "berhasil di hapus" << endl;
-        }
+       
         break;
         case '3':
         {
