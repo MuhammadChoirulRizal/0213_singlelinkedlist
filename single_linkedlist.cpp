@@ -77,7 +77,22 @@ void addNode()
     }
     void traverse()
     {
-    
+        if (listEmpty())
+        {
+            cout << "\nList kosong\n";
+        }
+        else
+        {
+            cout << "\nData didalam list:\n";
+            node *currentNode = START;
+            while (currentNode != NULL)
+            {
+                cout << currentNode->noMhs << endl;
+                currentNode = currentNode->next;
+            }
+            cout << endl;
+        }
+    }
 };
 
 int main()
@@ -101,9 +116,7 @@ int main()
         switch (ch)
         {
         case '1':
-        {
-            mhs.addNode();
-        }
+        
         break;
         case '2':
         {
