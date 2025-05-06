@@ -173,10 +173,10 @@ int main()
         {
             exit(0);
         }
-       
-            {
-                break;
-            }
+        {
+            cout << "pilihan salah !." << endl;
+        }
+          
         }
         }
     }
