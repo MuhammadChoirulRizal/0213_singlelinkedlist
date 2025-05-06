@@ -139,21 +139,12 @@ int main()
                      << " data dengan nomor mahasiswa " << nim << "berhasil di hapus" << endl;
         }
         break;
-        
-        case '4':
+        case '3':
         {
-            if (mhs.listEmpty() == true)
-            {
-                cout << "\nlist kosong\n";
-                break;
-            }
-            node *previous, *current;
-            cout << endl
-                 << "masukkan no mahasiswa yang dicari : ";
-            cin >> nim;
-            if (mhs.search(nim, &previous, &current) == false)
-                cout << endl
-                     << "data tidak ditemukan" << endl;
+            mhs.traverse();
+        }
+        break;
+       
             else
             {
                 cout << endl
